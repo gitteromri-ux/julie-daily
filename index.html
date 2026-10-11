@@ -170,7 +170,7 @@ ul.big li b{color:var(--gold);font-weight:700}
 .rate div{font-size:var(--fs-m);color:var(--ink)}
 .rate span{display:block;font-size:var(--fs-s);color:var(--ink3);text-transform:uppercase;letter-spacing:.12em;font-weight:600;margin-bottom:4px}
 section.slide{scroll-margin-top:84px}
-@media (max-width:900px){.card .tbl table,.tbl table{min-width:0!important;font-size:15px}.card td,.card th{padding:8px 5px!important;white-space:nowrap!important}.card th{font-size:11px!important;letter-spacing:.04em}.card td:first-child{font-weight:700}.rate{gap:14px 22px}.rate div{font-size:20px}.daygrid{grid-template-columns:repeat(2,1fr)}.daygrid .card .big{font-size:clamp(44px,12vw,72px)}.card{padding:16px}.tabbar{padding:10px 16px}}
+@media (max-width:900px){.card .tbl table,.tbl table{min-width:0!important;font-size:14px;width:100%}.card td,.card th{padding:8px 3px!important;white-space:nowrap!important}.card th{font-size:11px!important;letter-spacing:.04em}.card td:first-child{font-weight:700}.rate{gap:14px 22px}.rate div{font-size:20px}.daygrid{grid-template-columns:repeat(2,1fr)}.daygrid .card .big{font-size:clamp(44px,12vw,72px)}.card{padding:16px}.tabbar{padding:10px 16px}}
 </style>
 </head>
 <body>
@@ -211,7 +211,7 @@ function daySlide(d,i,isToday){
     <div><span>Revenue (Meta)</span>${$(d.rev)}</div>
   </div>
   <div class="card" style="margin-top:clamp(14px,1.6vw,26px)"><div class="lab">By ad set</div>
-  <div class="tbl"><table class="dense"><thead><tr><th>Set</th><th class="n">Spend</th><th class="n">Visitors</th><th class="n">Forms</th><th class="n">Meta</th><th class="n">Per seat</th></tr></thead><tbody>${rows||'<tr><td colspan="6">no spend</td></tr>'}</tbody></table></div>
+  <div class="tbl"><table class="dense"><thead><tr><th>Set</th><th class="n">Spend</th><th class="n">Visits</th><th class="n">Forms</th><th class="n">Meta</th><th class="n">Per seat</th></tr></thead><tbody>${rows||'<tr><td colspan="6">no spend</td></tr>'}</tbody></table></div>
   <div class="sub">Per-set seats are Meta-attributed; the CRM log does not carry the ad set. Day totals use CRM paid orders.</div></div>
   <div class="foot"><span>Meta Ads Manager (Israel time) · CRM order log · pixel ${'1440305917310328'} · tests excluded</span><span>Updated ${upd}</span></div>
 </section>`}
